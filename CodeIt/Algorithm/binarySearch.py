@@ -1,5 +1,4 @@
-# 내 답
-
+# 내 답 #
 # def binary_search(element, some_list, start_index=0, end_index=None):
 #     # end_index가 따로 주어지지 않은 경우에는 리스트의 마지막 인덱스
 #     if end_index == None:
@@ -17,7 +16,7 @@
 #     elif some_list[(start_index + end_index) // 2] > element:
 #         return binary_search(element, some_list, start_index, (start_index + end_index) // 2)
 
-# 해답
+# 해답 #
 
 def binary_search(element, some_list, start_index=0, end_index=None):
     # end_index가 따로 주어지지 않은 경우에는 리스트의 마지막 인덱스

@@ -7,8 +7,8 @@
 #         x = int(str(n)[index])
 #         index += 1
 #         return x + sum_digits(n - x * 10**(len(str(n)) - index))
-
-# 해답
+#
+### 해답 ###
 def sum_digits(n):
     # base case
     if n < 10:

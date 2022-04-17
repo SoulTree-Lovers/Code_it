@@ -1,4 +1,4 @@
-# 1부터 n까지의 합을 리턴
+### 1부터 n까지의 합을 리턴 ###
 def triangle_number(n):
     if n == 1:
         return 1

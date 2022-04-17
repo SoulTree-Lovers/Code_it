@@ -1,3 +1,4 @@
+# 좌우동형 (재귀 X) #
 def is_palindrome(word):
     new_word = ""
     for i in range(len(word)):
