@@ -23,7 +23,8 @@ class BinarySearchTree:
 
     def search(self, data):
         """이진 탐색 트리 탐색 메소드, 찾는 데이터를 갖는 노드가 없으면 None을 리턴한다"""
-    
+
+        # 코드를 쓰세요
         temp = self.root
 
         while temp is not None:

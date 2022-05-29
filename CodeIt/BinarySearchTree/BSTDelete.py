@@ -104,16 +104,29 @@ class BinarySearchTree:
 
         # 경우 3: 지우려는 노드가 2개의 자식이 있을 때 (코드를 쓰세요!)
         
+        # 내 코드
+        # else:
+        #     successor = self.find_min(node_to_delete.right_child)
+        #     node_to_delete.data = successor.data
+            
+        #     if successor is successor.parent.left_child:
+        #         successor.parent.left_child = successor.right_child
+        #     else:
+        #         successor.parent.right_child = successor.right_child
+        
         else:
-            successor = self.find_min(node_to_delete.right_child)
-            node_to_delete.data = successor.data
-            
-            if successor is successor.parent.left_child:
-                successor.parent.left_child = successor.right_child
-            else:
-                successor.parent.right_child = successor.right_child
-            
+            successor = self.find_min(node_to_delete.right_child)  # 삭제하려는 노드의 successor 노드 받아오기
 
+            node_to_delete.data = successor.data  # 삭제하려는 노드의 데이터에 successor의 데이터 저장
+
+            # successor 노드 트리에서 삭제
+            if successor is successor.parent.left_child:  # successor 노드가 오른쪽 자식일 때
+                successor.parent.left_child = successor.right_child
+            else:  # successor 노드가 왼쪽 자식일 때
+                successor.parent.right_child = successor.right_child        
+        
+            if successor.right_child is not None:  # successor 노드가 오른쪽 자식이 있을 떄
+                successor.right_child.parent = successor.parent
     
               
 

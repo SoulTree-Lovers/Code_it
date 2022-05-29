@@ -29,6 +29,7 @@ class BinarySearchTree:
             self.root = new_node
             return
 
+        # 코드를 쓰세요
         temp = self.root
 
         while temp is not None:
